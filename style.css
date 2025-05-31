@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "popins", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #222;
+}
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: white;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input {
+    border: none;
+    outline: none;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    width: 322px;
+    height: 60px;
+    border-radius: 30px;
+}
+.search button {
+    border: none;
+    outline: none;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.search button i {
+    width: 40px;
+}
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img {
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind {
+    font-size: 20px;
+    margin-top: -6px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+    color: red;
+}
+
+/* RESPONSIVE */
+/* Mobile-768px */
+@media (max-width: 768px) {
+    .search input {
+        font-size: 22px;
+    }
+    .search button i {
+        font-size: 18px;
+    }
+}
+
+/* Mobile-325px */
+@media (max-width: 325px) {
+    .search input {
+        width: 260px;
+        height: 40px;
+        font-size: 13px;
+        margin-left: -18px;
+    }
+    .search button {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    .search button i {
+        font-size: 18px;
+    }
+}
+
+/* Mobile-375px */
+@media (max-width: 375px) {
+    .search input {
+        width: 260px;
+        height: 40px;
+        font-size: 13px;
+    }
+    .search button {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    .search button i {
+        font-size: 18px;
+    }
+}
+
+/* Mobile-425px */
+@media (max-width: 425px) {
+    .search input {
+        width: 260px;
+        height: 40px;
+    }
+    .search button {
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    }
+    .search button i {
+        font-size: 18px;
+    }
+}
